@@ -1,0 +1,47 @@
+soma_masculino = 0
+quant_masculino = 0
+soma_feminino = 0
+quant_feminino = 0
+media_masculino = 0
+
+
+
+
+for i in range(15):
+    print(f'\nPessoa {i+1}')
+
+    altura = float( input('Digite a altura: '))
+    genero = input('Digite o seu genero: ').strip().upper()
+
+    #Definir maior e menor altura
+    if i == 0:
+        maior_altura = altura
+        menor_altura = altura
+    else:
+        if altura > maior_altura:
+            maior_altura = altura
+        if altura < menor_altura:
+            menor_altura = altura
+
+
+    #Verificar genero
+    if genero == 'MASCULINO':
+        soma_masculino += altura
+        quant_masculino += 1
+    elif genero == 'FEMININO':
+        soma_feminino += altura
+        quant_feminino += 1
+
+
+    #Calcular média MASCULINA
+    if quant_masculino > 0:
+        media_masculino = soma_masculino / quant_masculino
+    else:
+        media_masculino = 0
+
+    #Mostrar resultados
+    print('\n===== RESULTADOS =====')
+    print('Maior altura:', maior_altura)
+    print('Menor altura:', menor_altura)
+    print(f'Media de altura (Masculino).' {media_masculino: .2f })
+    print('Numero de pessoas do Genero Feminino:', quant_feminino)
