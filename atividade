@@ -7,7 +7,7 @@ media_masculino = 0
 
 
 
-for i in range(15):
+for i in range(31):
     print(f'\nPessoa {i+1}')
 
     altura = float( input('Digite a altura: '))
@@ -40,8 +40,8 @@ for i in range(15):
         media_masculino = 0
 
     #Mostrar resultados
-    print('\n===== RESULTADOS =====')
-    print('Maior altura:', maior_altura)
-    print('Menor altura:', menor_altura)
-    print(f'Media de altura (Masculino).' {media_masculino: .2f })
-    print('Numero de pessoas do Genero Feminino:', quant_feminino)
+print('\n===== RESULTADOS =====')
+print('Maior altura:', maior_altura)
+print('Menor altura:', menor_altura)
+print(f'Media de altura (Masculino). {media_masculino: .2f}')
+print('Numero de pessoas do Genero Feminino:', quant_feminino)
